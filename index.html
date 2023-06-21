@@ -4,11 +4,31 @@
         <title>Test website</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="style.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="script.js"></script>
     </head>
     <body>
-        <div class="">
-            Here is some text!
+        <div class="h-screen center-items bg-gray text-lg">
+            <div class="p-8 bg-white rounded-lg flex-col">
+                <p>Here is some text!</p>
+                <p id="counter">
+                    0
+                </p>
+                <button
+                    onclick={handleClick()}
+                    type="button"
+                    class="text-lg p-2"
+                >
+                    Click me!
+                </button>
+                <button
+                    onclick={resetCounter()}
+                    type="button"
+                    class="text-lg p-2"
+                >
+                    Reset
+                </button>
+            </div>
         </div>
     </body>
 </html>
