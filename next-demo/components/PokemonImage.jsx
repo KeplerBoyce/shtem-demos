@@ -1,6 +1,7 @@
+import React from "react";
 import Image from "next/image";
 
-const PokemonImage = (props: { src: string, name: string, chosen: string, callback: () => void }) => {
+const PokemonImage = (props) => {
     // destructure properties
     const { src, name, chosen, callback } = props;
     return (

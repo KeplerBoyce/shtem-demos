@@ -1,16 +1,9 @@
-import type { NextPage } from 'next'
 import { useState } from 'react';
 import PokemonImage from '../components/PokemonImage'
 
-// type for PokemonImage properties
-interface pokemonType {
-    name: string,
-    src: string,
-}
-
-const Home: NextPage = () => {
+const Home = () => {
     // list of pokemon
-    const pokemon: pokemonType[] = [
+    const pokemon = [
         { name: "Crustle", src: "/crustle.png" },
         { name: "Wooper", src: "/wooper.png" },
         { name: "Gengar", src: "/gengar.png" },
@@ -28,8 +21,9 @@ const Home: NextPage = () => {
                 Chosen Pokemon: {chosen}
             </p>
             <div className="flex gap-3">
-                {pokemon.map((x: pokemonType) =>
+                {pokemon.map((x, i) =>
                     <PokemonImage
+                        key={i}
                         src={x.src}
                         name={x.name}
                         chosen={chosen}
