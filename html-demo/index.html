@@ -7,14 +7,14 @@
         <link href="styles.css" rel="stylesheet">
         <script src="script.js"></script>
     </head>
-    <body>
-        <div class="h-screen center-items bg-gray text-lg">
-            <div class="p-8 bg-white rounded-lg flex-col">
-                <h1>Here is a heading!</h1>
-                <p>Here is some text!</p>
-                <p id="counter">
-                    0
-                </p>
+    <body class="h-screen center-items bg-gray text-lg">
+        <div class="p-8 bg-white rounded-lg flex flex-col gap-2 max-w-xl">
+            <h1>Here is a heading!</h1>
+            <p>Here is some text! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p id="counter" class="text-center text-xl">
+                0
+            </p>
+            <div class="flex gap-2 justify-center">
                 <button
                     onclick={handleClick()}
                     type="button"

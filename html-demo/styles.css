@@ -28,6 +28,10 @@ p {
     font-size: 18px;
 }
 
+.text-xl {
+    font-size: 36px;
+}
+
 .rounded-lg {
     border-radius: 1rem;
 }
@@ -42,10 +46,27 @@ p {
     align-items: center;
 }
 
-.flex-col {
+.flex {
     display: flex;
+}
+
+.flex-col {
     flex-direction: column;
-    align-items: center;
+}
+
+.gap-2 {
     gap: 0.5rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.max-w-xl {
+    max-width: 48rem;
 }
 
