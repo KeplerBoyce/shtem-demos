@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import PokemonImage from '../components/PokemonImage'
+import PokemonImage from './components/PokemonImage'
 
-const Home = () => {
+export default function App() {
     // list of pokemon
     const pokemon = [
         { name: "Crustle", src: "/crustle.png" },
@@ -34,6 +34,4 @@ const Home = () => {
         </main>
     )
 }
-
-export default Home
 
